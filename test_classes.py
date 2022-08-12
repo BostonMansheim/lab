@@ -9,6 +9,9 @@ class MyTestCase(unittest.TestCase):
     def tearDown(self) -> None:
         del self.tv1
 
+    def test_init(self):
+        assert self.tv1.__str__() == 'TV status: Is on = False, Channel = 0, Volume = 0'
+
     def test_power(self):
         self.tv1.power()
         assert self.tv1.__str__()[19:23] == 'True'  # add assertion here
