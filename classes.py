@@ -12,9 +12,9 @@ class Television:
         """
         Constructor to create a new TV
         """
-        self.__channel = 0
-        self.__volume = 0
-        self.__status = 'off'
+        self.__channel: int = 0
+        self.__volume: int = 0
+        self.__status: str = 'off'
 
     def power(self) -> None:
         """
